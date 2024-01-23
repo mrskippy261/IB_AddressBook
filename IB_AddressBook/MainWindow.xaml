@@ -1,0 +1,25 @@
+﻿<Window x:Name="myWindow" x:Class="IB_AddressBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IB_AddressBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="354" Width="846" Closed="myWindow_Closed">
+    <Grid>
+        <ListBox x:Name="lbContactList" HorizontalAlignment="Left" Width="196" Margin="10,14,0,0" Height="285" VerticalAlignment="Top" FontSize="24" SelectionChanged="lbContactList_SelectionChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="337,53,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="316,100,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Contact Number" HorizontalAlignment="Left" Margin="225,147,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Email Address" HorizontalAlignment="Left" Margin="253,194,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtbName" HorizontalAlignment="Left" Margin="415,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375" FontSize="24"/>
+        <TextBox x:Name="txtbAdd" HorizontalAlignment="Left" Margin="416,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="24"/>
+        <TextBox x:Name="txtbCNum" HorizontalAlignment="Left" Margin="416,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="24"/>
+        <TextBox x:Name="txtbEAdd" HorizontalAlignment="Left" Margin="416,198,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374" FontSize="24"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="211,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtbSearch" HorizontalAlignment="Left" Margin="297,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="493" FontSize="24"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="251,263,0,0" VerticalAlignment="Top" FontSize="24" Width="150" Click="btnClear_Click"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="452,263,0,0" VerticalAlignment="Top" FontSize="24" Width="150" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="640,263,0,0" VerticalAlignment="Top" FontSize="24" Width="150"/>
+    </Grid>
+</Window>
